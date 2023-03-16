@@ -23,5 +23,3 @@ This allows you to view the video and the comments at the same time, without hav
 Contributions are welcome! If you find any bugs or have suggestions for new features, please open an issue on the GitHub repository.  
 
 
-## License  
-This project is licensed under the MIT License - see the LICENSE.md file for details.  
