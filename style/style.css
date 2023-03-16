@@ -1,0 +1,8 @@
+#secondary {
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+#secondary::-webkit-scrollbar {
+  display: none;
+}
