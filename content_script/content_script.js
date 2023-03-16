@@ -11,7 +11,6 @@ chrome.storage.onChanged.addListener((changes) => {
 
 const moveComments = (isEnabled) => {
   if (isEnabled) {
-    console.log('isEnabled???', isEnabled);
     let link = document.createElement('link');
     link.href = chrome.runtime.getURL('style/style.css');
     link.type = 'text/css';

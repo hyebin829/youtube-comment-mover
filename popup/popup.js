@@ -9,7 +9,6 @@ toggleButton.addEventListener('click', () => {
   toggleButton.textContent = label;
 
   chrome.storage.local.get('isEnabled', (data) => {
-    console.log(data);
     isEnabled = !data.isEnabled;
     chrome.storage.local.set({ isEnabled });
     chrome.runtime.sendMessage({ type: 'toggle', isEnabled });
