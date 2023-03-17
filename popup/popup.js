@@ -1,17 +1,16 @@
 const toggleButton = document.getElementById('toggle-button');
-let isEnabled = chrome.storage.local.get('isEnabled', (data) => {
-  data.isEnabled || true;
+
+chrome.storage.local.get('isEnabled', (data) => {
+  let isEnabled = data.isEnabled ?? true;
+  toggleButton.textContent = isEnabled ? 'Off' : 'On';
 });
 
 toggleButton.addEventListener('click', () => {
-  let label = toggleButton.textContent;
-  label = isEnabled ? 'On' : 'Off';
-  toggleButton.textContent = label;
-
   chrome.storage.local.get('isEnabled', (data) => {
-    isEnabled = !data.isEnabled;
+    let isEnabled = !data.isEnabled;
     chrome.storage.local.set({ isEnabled });
     chrome.runtime.sendMessage({ type: 'toggle', isEnabled });
+    toggleButton.textContent = isEnabled ? 'Off' : 'On';
   });
 });
 
