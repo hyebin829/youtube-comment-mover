@@ -6,7 +6,13 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  if (changeInfo.status === 'complete' && tab.url && tab.url.startsWith('https://www.youtube.com/watch*')) {
-    chrome.tabs.executeScript(tabId, { file: 'content_script/content_script.js' });
+  if (
+    changeInfo.status === 'complete' &&
+    tab.url &&
+    tab.url.startsWith('https://www.youtube.com/watch*')
+  ) {
+    chrome.tabs.executeScript(tabId, {
+      file: 'content_script/content_script.js',
+    });
   }
 });
