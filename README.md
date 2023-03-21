@@ -18,9 +18,8 @@ This allows you to view the video and the comments at the same time, without hav
 
 ## Usage
 1. Go to a YouTube video page.  
-2. Click the extension icon in the top-right corner of the browser.  
-3. Click the toggle button to move the comments to the side of the video player.  
-4. Click the toggle button again to move the comments back to their original location.  
+2. Click the extension icon and then click the refresh button.
+3. You can move/cancel comments to the right by pressing on/off.
 
 
 ## Contributing
