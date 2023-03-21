@@ -2,7 +2,7 @@
 
 ![pic](https://user-images.githubusercontent.com/80376561/226559781-3f9466e0-f671-4716-a993-34f248d01153.gif)
 
-[go to chrome web store](https://chrome.google.com/webstore/detail/youtube-comment-mover/hgfhnoeankefdllkibigpkjgnklpjkgb/related?hl=ko&authuser=0)
+[go to chrome web store](https://chrome.google.com/webstore/detail/youtube-comment-mover/hgfhnoeankefdllkibigpkjgnklpjkgb?hl=ko&authuser=0)
 
 YouTube Comment Mover is a Chrome extension that moves the comments section to the side of the video player.  
 This allows you to view the video and the comments at the same time, without having to constantly scroll down.  
